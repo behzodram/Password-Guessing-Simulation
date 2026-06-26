@@ -1,0 +1,1 @@
+v 1.0.0 => main: Sahifa Claude tomonidan yozildi. Qo'llanma esa qo'lda yozildi.

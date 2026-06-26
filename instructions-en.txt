@@ -1,0 +1,35 @@
+1. Instruction for controlling a mobile phone from a PC:
+1.1 Turning on USB Debugging:
+
+If your device is a Redmi Note 8: Go to Settings → About Phone and tap "MIUI Version" 7 times until the message "No need, you are already a developer" appears.
+If your device is not a Redmi Note 8: Search the internet for how to enable Developer Mode for your specific device model.
+
+1.2 Downloading the mobile controller desktop app:
+
+To control your mobile phone from a PC via USB cable, download the required Windows app from: https://github.com/Genymobile/scrcpy/tree/master. Press CTRL+F and search "Get the app", then click the Windows download link on the page. Download the 64-bit ZIP from the "From the official release" section. Open the ZIP file, connect your mobile device to your PC via USB cable, then double-click scrcpy.exe inside the ZIP. Your phone's screen will appear on your monitor.
+2. Instruction for creating an AutoHotKey script:
+2.1 Downloading the AHK desktop app:
+
+To run AutoHotKey control files, install the desktop application from: https://www.autohotkey.com/
+2.2 Creating the AHK file:
+
+Create a new file named Soliq.ahk (the extension must be .ahk).
+2.3 Important — pay close attention:
+
+Put scrcpy into full-screen mode, open the Calculator app on your phone for testing, then open the AutoHotKey app you just installed and select the "Window Spy" section.
+2.4 Coordinate mapping:
+
+Open the Calculator app on your phone. Then move the mouse one by one over each digit from 1–9 and 0 (also the confirm button — its coordinates are stored as CONFIRM_X and CONFIRM_Y in the code). Read and note down the Screen coordinates from "Mouse Position → Screen" in Window Spy for each key.
+2.5 Applying the coordinates:
+
+Replace the NX and NY parameter values in the AHK file with the coordinates you collected.
+
+WIN + R → start the test
+WIN + S → stop the test
+
+2.7 Customizing for your app:
+
+You can adapt it to your own application. By reducing DELAY_MS = 120 and CLICK_DUR = 30, you can get faster results.
+2.8 Resuming from a position:
+
+No matter how fast it runs, you can watch what code it is typing, estimate approximately which number it has reached, and restart the test by setting START_NUM to a number slightly below your estimate.

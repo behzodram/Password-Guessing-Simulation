@@ -1,0 +1,81 @@
+1. Instruction of controlling mobile phone from PC:
+    1.1 Instruction of turning on USB debugging:
+        if your device is Redmi Note 8
+        Go to settings => About Phone
+        and push MUI Version 7 times untill
+        it is shown that "No need, you are 
+        already a developer"
+        if your device is not Redmi Note 8
+        look for from the internet how to 
+        turn on a developer mode for your device model
+
+    1.2 Downloading Desktop app of mobile controller 
+        Windows orqali mobil telefonni PC ga 
+        kabelli ulangan holatda PC dan turib 
+        nazorat qilish uchun kerak bo'lgan
+        Windows ilovasi uchun link:
+            https://github.com/Genymobile/scrcpy/tree/master
+
+        CTRL + F => "Get the app"
+        qidiriladi va sahifadan Windows linkini 
+        ustiga bosiladi.
+
+        "From the official release" qismidan
+        64 bitli zip yuklab olinadi.
+
+        ZiP fayl ichiga kiring, va Mobil qurilmangizni
+        PC ga USB kabel orqali ulagan holatda 
+        zip file ichidan scripy.exe ni ustiga 2 marta
+        bosing.
+
+        Va sizning ilovangiz ekranda namoyon boladi.
+
+2. Instruction of Creating Auto Hot Key:
+    2.1 Downloading Desktop app for AHK file:
+        Auto Hot Key nazort fayllari ishlashi uchun
+        quyidagi havola orqali Desktop ilovani PCga
+        o'rnatilishi kerak: https://www.autohotkey.com/
+    
+    2.2 Creating AHK file:
+        Yangi Soliq.ahk faylini yaratasiz (muhimi
+        fayl kengaytmasi .ahk bo'lishi kerak)
+    
+    2.3 Juda muhim qismi diqqatli bo'ling:
+        scrcpy ochgan ilovani full screen 
+        modega qo'yiladi va test uchun kalkulator
+        ilovasi ochiladi hamda autohotkeyDash
+        hozirgina o'rnatilgan ilovani ochib 
+        window spy bo'limi tanlanadi.
+
+    2.4 Koordinatalash qismi:
+        Telefonda kalkulator ilovasini ochiladi.
+        Keyin esa 1 dan 9 gacha va 0 ( hamda
+        tasdiqlash tugmasi ham, buni
+        koordinatasi CONFIRM_X v CONFIRM_Y
+        biln belgilangan kod qismida ) har bir raqamga 
+        sichqonchani birma-bir olib boriladi 
+        hamda window spy dagi Mouse Position -> Screen
+        koordinatalari birma bir yozib olinadi.
+
+    2.5 Olingan koordinatalar ahk faylda NX va NY 
+        parametrlarini o'rniga qo'yiladi va fayl 
+        save qilinadi.
+        AHK faylini ishga tushurish uchun saqlangan 
+        ahk faylning ustiga 2 marta bosiladi.
+        Endi fayl ishga tushurilish uchun tayyor.
+        va WIN + R => test boshlash uchun
+        WIN + S => testni to'xtatish uchun
+
+    2.7 Endi O'z ilovangizga moslab olishingiz va 
+        DELAY_MS =120 hamda CLICK_DUR = 30
+        kichraytirilgan holatda tez natija olishingiz
+        mumkin.
+
+    2.8 Qanchalik tez bo'lmasin, uni kod terishini kuzatib,
+        taxminan nechaga kelganini taxmin qilib ham 
+        START_NUM qiymatini u taxminiy sondan kichik son 
+        bilan tenglab qayta test qilsa bo'ladi.
+
+3. O'zingizga kerakli app uchun:
+        (2.2) Creating AHK file dan toki
+        (2.8) bo'limgacha qayta bajaring.
